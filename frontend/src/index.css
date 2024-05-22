@@ -1,0 +1,106 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: inherit;
+}
+a:hover {
+  color: #a4a4aa;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+table{
+  width: 100%;
+  margin: 1em auto;
+  margin-top: 2em ;
+  margin-bottom: 2em;
+  /* display: flex; */
+}
+.row td {
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+th {
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  background-color: #151414;
+}
+
+tr:nth-child(even) {
+  background-color: #272525;
+}
+
+input {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.link-container {
+  display: flex; /* Enable flexbox for the container */
+}
+
+.link-container button:first-child { /* Style the button */
+  margin-right: 10px; /* Add spacing between button and modal */
+}
+.error{
+  color: rgb(197, 71, 71);
+}
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  
+}
+button:hover {
+  border-color: #7578a7;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #b2b2b9;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

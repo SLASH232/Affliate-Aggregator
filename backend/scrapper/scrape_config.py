@@ -1,0 +1,77 @@
+#affiliate commission rate on sites
+commission_rate_link={
+    "amazon":"https://affiliate-program.amazon.in/help/node/topic/GRXPHT8U84RAYDXZ",
+    "flipkart":"https://affiliate.flipkart.com/commissions"
+    }
+stores=["amazon","flipkart"]
+
+# -------- tags and names-----------#
+product_config={
+    "amazon":{
+        'main':{
+            'tag':'div',
+            'attr':'id',
+            'value':'ppd'
+        },
+        'product_title':{
+            'tag':'h1',
+            'attr':'id',
+            'value':'#title'
+        },
+        'product_price':{
+            'tag':'span',
+            'attr':'class',
+            'value':'.a-price-whole'
+        },
+        'product_instock':{
+            'tag':'div',
+            'attr':'id',
+            'value':'#availability'
+        },
+        'product_category':{
+            'tag':'div',
+            'attr':'id',
+            'value':'#showing-breadcrumbs_div'
+        }
+    },       
+"flipkart":{
+    'main':{
+        'tag':'div',
+        'attr':'id',
+        'value':'container'
+    },
+    'product_title':{
+        'tag':'h1',
+        'attr':'class',
+        'value':'._6EBuvT'
+    },
+    'product_price':{
+        'tag':'div',
+        'attr':'class',
+        'value':'.Nx9bqj.CxhGGd'
+    },
+    'product_instock':{
+        'tag':'button',
+        'attr':'class',
+        'value':'.QqFHMw.vslbG+._3Yl67G._7Pd1Fp'
+    },
+    'product_category':{
+        'tag':'div',
+        'attr':'class',
+        'value':'._7dPnhA'
+    },       
+}
+}
+
+commission_config={
+    'amazon':{
+        'tag':'table',
+        'attr':'class',
+        'value':'.ratetable'
+    },
+    'flipkart':{
+        'tag':'div',
+        'attr':'class',
+        'value':'.table.OrderCommTable.table-bordered'
+    },
+}
